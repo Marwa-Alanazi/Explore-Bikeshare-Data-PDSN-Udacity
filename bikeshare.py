@@ -17,7 +17,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """       
     print('Hello! I am Marwa!! Let\'s explore some US bikeshare data!')
-    print('-:-'*20)
+    print('-:-'*30)
     
     # To get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs to handling the unexpected input by user
     city = input('Do you want to look for data for Chicago, New York, or Washington? ').lower()
@@ -51,7 +51,7 @@ def get_filters():
     else:
         day = 'all'
     
-    print('-:-'*20)
+    print('-:-'*30)
     return city, month, day
 
 def load_data(city, month, day):
@@ -83,6 +83,12 @@ def load_data(city, month, day):
     return df
 
 def time_stats(df):
+    '''
+    What is the most popular hour of day for start time?
+    What is the most popular day of week for start time?
+    What is the most popular month for start time?
+    '''
+
     # To displays the statistics of the most frequent times of travel
     print('\nWhat is the most frequent times of travel?....\n')
     print('\nCalculating the most frequent times of travel...\n')
@@ -101,7 +107,7 @@ def time_stats(df):
     print("The most common month is :", most_common_month)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-:-'*20)
+    print('-:-'*30)
     
 def station_stats(df):
     # To displays statistics on the most popular stations and trip
@@ -123,7 +129,7 @@ def station_stats(df):
     print(f'The most popular trip is: from {most_common_start_end_station.mode()[0]}')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-:-'*20)   
+    print('-:-'*30)   
     
 def trip_duration_stats(df):
     from datetime import timedelta as td
@@ -166,7 +172,6 @@ def user_info(df):
         print(df['Gender'].value_counts())
         print('\n\n')
 
-
     # To display earliest, most recent, and most common year of birth
     if 'Birth Year' in(df.columns):
         year = df['Birth Year'].fillna(0).astype('int64')
@@ -174,7 +179,7 @@ def user_info(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-:-'*20)
+    print('-:-'*30)
 
 def display_raw_data(df):
     
