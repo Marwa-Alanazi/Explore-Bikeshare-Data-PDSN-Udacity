@@ -20,7 +20,7 @@ def get_filters():
     print('-:-'*20)
     
     # To get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs to handling the unexpected input by user
-    city = input('Do you want to look for data for Chicago, New York, or Washington? ')
+    city = input('Do you want to look for data for Chicago, New York, or Washington? ').lower()
     while city not in selected_cities:
         print('You entered invalid city name not in the list')
         city = input('Do you want to look for data for Chicago, New York, or Washington? ').lower()
