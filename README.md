@@ -58,4 +58,11 @@ You will learn about bike share use in Chicago, New York City, and Washington by
 * Counts of each gender (only available for NYC and Chicago)
 * Earliest, most recent, most common year of birth (only available for NYC and Chicago)
 
+### The Files
+To answer these questions using Python, we need to write a Python script.  Also we need the three city dataset files too:
+
+* chicago.csv
+* new_york_city.csv
+* washington.csv
+
 ---
