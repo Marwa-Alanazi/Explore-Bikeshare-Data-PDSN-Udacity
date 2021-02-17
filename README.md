@@ -6,6 +6,8 @@ February 2021.
 ## Introduction
 This is the second project in Udacity Programming for Data Science which we study how to use python in data science.
 
+---
+
 ## Project Overview
 In this project, we make use of Python to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. We write code to import the data and answer interesting questions about it by computing descriptive statistics. We also write a script that takes in raw input to create an interactive experience in the terminal to present these statistics.
 
@@ -69,3 +71,7 @@ To answer these questions using Python, we need to write a Python script.  Also 
 * Washington.csv
 
 ---
+
+## Link
+
+[Udacity](http://www.udacity.com)
